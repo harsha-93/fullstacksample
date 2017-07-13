@@ -1,0 +1,11 @@
+body{
+	background: #24292e;
+	color:#fff;
+	font-family: 'Verdana';
+}
+
+h1 {
+	background: url('/assets/images.jpeg') no-repeat center;
+	height: 150px;
+	width: auto;
+}

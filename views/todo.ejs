@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Nodejs Todo App</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="/assets/style.css">
+	<script type="text/javascript" src="/assets/todo.js"></script>
+</head>
+<body>
+<h1></h1>
+	<div class="todo-div">
+		<form>
+			<input type="text" name="item" placeholder="Add an item here....">
+			<button type="submit">Add Item</button>
+		</form>
+		<ul>
+			<% for(var i=0; i<todos.length; i++){ %>
+			<li title="click to delete the item"><%= todos[i].item%></li>
+			<% } %>
+		</ul>
+	</div>
+
+</body>
+</html>
+
